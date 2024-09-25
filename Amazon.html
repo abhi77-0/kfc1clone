@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon International</title>
+    <link rel="icon" type="image/svg" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navlogo">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <div class="adress">
+            <p class="deli">Deliver to</p>
+        </div>
+            <div class="icon">
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/light/map-pin-13.png" alt="">
+            <p>India</p>
+        </div>
+        <div class="navsearch">
+            <select class="selct">
+                <option>All</option>
+            </select>
+            <input class="srch" placeholder="search amazon">
+            <div class="imag">
+            <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="">
+            </div>
+
+        </div>
+        <div class="language">
+            <img src="data:image/png;base64,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">
+            <select class="english">
+                <option>EN</option>
+            </select>    
+            
+        </div>
+        <div class="sign">
+            <p>Hello,Sign in</p>
+            <p class="accnt">Account & Lists</p>
+        </div>
+        <div class="returns">
+            <p>Returns</p>
+            <p class="orders">
+                & Orders
+            </p>
+        </div>
+        <div class="cart">
+            <img src="data:image/png;base64,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">
+            <p>
+            Cart
+        </p>
+        </div>
+
+        
+    </div>
+    <div class="panel">
+        <div class="all">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEYHp9G9qyC4v48TK0mk9mxaFgXxzLC-NIqxpbOpluKCeOtjdEJMgqGAw_Vz2LQg647O4&usqp=CAU" alt="">
+           All
+        </div>
+            <div class="anchor">
+           <p> Today's Deals </p>
+           <p>Costumer Service</p>
+           <p>Registry</p>
+           <p>Gift Cards</p>
+           <p>Sell</p>
+            </div>
+        
+        <div class="shop">
+            Shop the Gaming Store
+        </div>
+    </div>
+    </div>
+    <div class="middle">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Launches/New_GlobalStore_LP_Desktop_US_2.png" alt="">
+    </div>
+    <div class="middlecontent">
+        <div class="heading">
+            <h3>Worldwide selection</h3>
+            <p>The Amazon Global Store allows you to easily discover a wide selection of international products available from Amazon’s websites around the world without leaving Amazon.com. When you purchase an international product, it is shipped and sold to you from outside the United States by an overseas Amazon affiliate.</p>
+            <div class="link">
+            <a href="">Please see Amazon Global Store Terms and Conditions for more information.</a>
+        </div>
+        </div>
+        <div class="heading">
+            <h3>Reliable delivery from outside the US in as little as 2 days</h3>
+            <p>The Amazon Global Store purchases come with the same reliable delivery you have come to expect from Amazon. You can choose from a range of delivery options as well as track and get notifications about your orders.</p>
+            <div class="link">
+                <a href="">Click here for details on delivery options and speeds.</a>
+            </div>
+        </div>
+        <div class="heading">
+            <h3>Import duties, taxes, and fees included at the time of purchase</h3>
+            <p>The Amazon Global Store simplifies the import process and shows you the complete amount you will pay for orders for international products, including import duties, taxes, and fees.</p>
+            <div class="link">
+                <a href="">Click here to learn more about the Import Fees Deposit.</a>
+            </div>
+        </div>
+        <div class="heading">
+            <h3>All customer service and returns are handled by Amazon.com</h3>
+            <p>The Amazon Global Store purchases are supported by Amazon.com Customer Service. You can return items within 30 days of delivery for a full refund. Simply use the Amazon.com Returns Support Center. The Amazon Global Store will cover the cost of international return shipping up to $20. If your return shipping costs more than $20, please contact Customer Service.</p>
+            <a href="">Click here to use our Returns Support Center</a>
+        </div>
+    </div>
+    <div class="product">
+        <div class="uk">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Amazon_Global_Services_AGS/XCM_CUTTLE_1737727_3895884_750x300_2X_en_US._CB567996194_.jpg" alt="">
+           
+        </div>
+        <div class="japan">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Amazon_Global_Services_AGS/XCM_CUTTLE_1737711_3895844_750x300_2X_en_US.jpg" alt="">
+            
+        </div>
+    </div>
+    <hr>
+    <div class="about">
+        <h3>About International Products</h3>
+        <p class="p1">International products are from outside the United States and may differ from your local versions, including in their fit, default settings, age ratings, and language. Any manufacturer warranties on international products may not apply. Any plugs or adaptors may not be compatible with the standards in your shipping destination. Certain products, such as software and DVDs, may be region locked against use in your shipping destination. Product packaging, labels, and instructions may also be in a language other than U.S. English. You should carefully review all available product information to ensure that the international product you are purchasing meets your needs and expectations.</p>
+        <p class="p2">We will charge you in U.S. dollars, but you may receive an invoice with your delivery showing the cost in a different currency.</p>
+        <p class="p3">When you buy international products from outside the United States, Amazon Global Store EU Sarl is the seller and you are the importer of record and must pay import duties, taxes, and fees when the products arrive in your shipping destination. Amazon Global Store simplifies this process by estimating the amount that will be due (the “Import Fees Deposit”) and adding it to the amount you pay. You authorize international carriers working with Amazon to pay this amount to local authorities on your (or the recipient’s) behalf. If Amazon’s estimate for the Import Fees Deposit is greater than what is needed, you will be automatically refunded the difference to your original payment method . You will never be asked to pay more than the estimated Import Fees Deposit.</p>
+    </div>
+    <button class="back">Back to top</button>
+    <div class="footer1">
+        <div class="heading1">
+        <div class="heading2">
+            <h4>Get to know Us</h4>
+            <p>Careers</p>
+            <p>Blog</p>
+            <p>Investor Relations</p>
+            <p>Amazon Devices</p>
+            <p>Amazon science</p>
+        </div>
+        <div class="heading2">
+            <h4>Make money with us</h4>
+            <p>Sell products on Amazon</p>
+            <p>Sell on Amazon Buisness</p>
+            <p>Sell apps on Amazon</p>
+            <p>Become an Affiliate</p>
+            <p>Advertise Your Products</p>
+            <p>Sell-publish with Us</p>
+            <p>Host an Amazon Hub</p>
+            <p>See More Make Money 
+                with US
+            </p>
+        </div>
+        <div class="heading2">
+            <h4>Amazon Pyment Products</h4>
+            <p>Amazon Buisness Card</p>
+            <p>Reload your Balance</p>
+            <p>Amazon Currency Converter</p>
+        </div>
+        <div class="heading2">
+            <h4>Let Us Help You</h4>
+            <p>Amazon and COVID-19</p>
+            <p>Your Account</p>
+            <p>Your Orders</p>
+            <p>Shipping Rates & Policies</p>
+            <p>Returns &<p>Replacements</p></p>
+            <p>Manage Your <P>Content and Devices</p>
+            <p>Help</p>
+            
+        </div>
+    </div>
+        <div class="line">
+            <hr>
+        </div>
+        <div class="amzn">
+            <img src="https://www.cdnlogo.com/logos/a/83/amazon-com.svg" alt="">
+            <select class="btm">
+                <option>English</option>
+            </select>
+                <button>$ USD-U.S.Dollar</button>
+                <button>United States</button>
+
+            </div>
+               
+            
+        </div>
+    
+    </div>
+    <div class="footer2">
+        <div class="block">
+        <div class="hd">
+            Amazon music
+            <p>streams millions of songs</p>
+        </div>
+        
+       <div class="hd">
+            Amazon Business
+            <p>Everything For
+                Your Business</p>
+        </div>
+        <div class="hd">
+            IMDb
+            <p>Movies, TV
+                & Celebrities	</p>
+        </div>
+        <div class="hd">
+            Amazon Ads
+            <p>Reach customers
+                wherever they
+                spend their time</p>
+        </div>
+        <div class="hd">
+            AmazonGlobal
+            <p>Ship Orders
+                Internationally</p>
+        </div>
+        <div class="hd">
+            IMDbPro
+            <p>Get Info Entertainment
+                Professionals Need</p>
+        </div>
+        <div class="hd">
+            6pm
+            <p>Score deals
+                on fashion brands</p>
+        </div>
+        <div class="hd">
+            Home Services
+            <p>Experienced Pros
+                Happiness Guarantee</p>
+        </div>
+        <div class="hd">
+            Kindle Direct publishing
+            <p>Indie Digital & Print Publishing
+                Made Easy
+                 </p>
+                </div>
+        </div>
+                <div class="block2">
+                 <div class="hd">
+                    AbeBooks
+                    <p>Books, art
+                        & collectibles
+                         </p>
+        </div>
+        <div class="hd">
+            ACX
+            <p>Audiobook Publishing
+                Made Easy
+                 </p>
+        </div>
+        <div class="hd">
+            Sell on Amazon
+            <p>Start a Selling Account
+                 </p>
+        </div>
+        <div class="hd">
+            Veeqo
+            <p>Shipping Software
+                Inventory Management
+                 </p>
+        </div>
+        <div class="hd">
+            Amazon buisness
+            <p>Everything For
+                Your Business
+                 </p>
+        </div>
+        <div class="hd">
+            Home Services
+            <p>Experienced Pros
+                Happiness Guarantee
+                 </p>
+        </div>
+        <div class="hd">
+            Audible
+            <p>Listen to Books & Original
+                Audio Performances
+                 </p>
+        </div>
+        <div class="hd">
+            Boxoffice Mojo
+            <p>Find Movie
+                Box Office Data
+                 </p>
+        </div>
+        <div class="hd">
+            Goodreads
+            <p>Book reviews
+                & recommendations
+                 </p>
+        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    </div>
+    <div class="block2">
+        <div class="hd">
+           Prime video direct
+           <p>Video Distribution
+            Made Easy
+                </p>
+</div>
+<div class="hd">
+   Shopbop
+   <p>Designer
+    Fashion Brands
+        </p>
+</div>
+<div class="hd">
+   Woot
+   <p>Deals and
+    Shenanigans	
+        </p>
+</div>
+<div class="hd">
+   Zappos
+   <p>Shoes &
+    Clothing
+
+        </p>
+</div>
+<div class="hd">
+   Ring
+   <p>Smart Home
+    Security Systems
+        </p>
+</div>
+<div class="hd">
+   eero WiFi
+   <p>Stream 4K Videoin Every Room	</p>
+        
+</div>
+<div class="hd">
+   Blink
+   <p>Smart Security
+    for Every Home
+        </p>
+</div>
+<div class="hd">
+   Neighbors App
+   <p>Real-Time Crime
+    & Safety Alerts	
+        </p>
+</div>
+<div class="hd">
+   Amazon Subscription Boxes
+   <p>Top subscription boxes - right to your door
+        </p>
+</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+</div>
+<div class="block2">
+    <div class="hd">
+       AbeBooks
+       <p>Books, art
+           & collectibles
+            </p>
+</div>
+<div class="hd">
+ACX
+<p>Audiobook Publishing
+   Made Easy
+    </p>
+</div>
+<div class="hd">
+Sell on Amazon
+<p>Start a Selling Account
+    </p>
+</div>
+<div class="hd">
+Veeqo
+<p>Shipping Software
+   Inventory Management
+
+    </p>
+</div>
+<div class="hd">
+AbeBooks
+<p>Books, art
+   & collectibles
+    </p>
+</div>
+<div class="hd">
+AbeBooks
+<p>Books, art
+   & collectibles
+    </p>
+</div>
+<div class="hd">
+AbeBooks
+<p>Books, art
+   & collectibles
+    </p>
+</div>
+<div class="hd">
+AbeBooks
+<p>Books, art
+   & collectibles
+    </p>
+</div>
+<div class="hd">
+AbeBooks
+<p>Books, art
+   & collectibles
+    </p>
+</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+</div>
+    <div class="lastpart">
+        <p>Conditions of use</p>
+        <p> Privacy Notice</p>
+            <p>Consumer Health Data Privacy Disclosure</p>
+                <p>Your Ads Privacy Choices</p>
+
+    </div>
+    <div class="copy">
+        © 1996-2024, Amazon.com, Inc. or its affiliates
+    </div>
+    
+        
+
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</body>
+</html>
